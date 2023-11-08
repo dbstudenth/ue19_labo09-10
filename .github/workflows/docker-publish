@@ -20,9 +20,9 @@ jobs:
         id: docker_build
         run: |
           docker buildx create --use
-          docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_REGISTRY }}/mon-image:latest .
+          docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_REGISTRY }}/Dockerfile:latest .
           docker login docker.pkg.github.com -u ${{ github.repository_owner }} -p ${{ secrets.GITHUB_TOKEN }}
-          docker push ${{ secrets.DOCKER_REGISTRY }}/mon-image:latest
+          docker push ${{ secrets.DOCKER_REGISTRY }}/Dockerfile:latest
         env:
           DOCKER_CLI_AGGREGATE: 1
 
