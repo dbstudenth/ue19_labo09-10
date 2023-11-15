@@ -26,4 +26,4 @@ jobs:
       run: |
         docker buildx create --use
         docker buildx inspect
-        docker buildx build --push -t docker.pkg.github.com/${{ github.repository }}/dockerfile:latest .
+        docker buildx build --push -t docker.pkg.github.com/${{ github.repository }}/Dockerfile .
