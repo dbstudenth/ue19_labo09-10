@@ -20,7 +20,7 @@ Exemple de sortie:
 Parce que sinon ils tombent dans le bateau !"
 
 # Problèmes connus
-Si le script ne peut pas récupérer de blague, il affichera "Impossible de récupérer une blague."
+Si le script ne peut pas récupérer de blague, il affichera "Impossible de récupérer une blague.".
 
 # Erreurs
 Si une erreur se produit lors de l'exécution du script, il affichera un message d'erreur décrivant la nature de l'erreur.
